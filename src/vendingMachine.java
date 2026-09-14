@@ -11,7 +11,7 @@ public class vendingMachine {
             if (snackCount > 0) {
                 snackCount--;
             }
-           // return snackCount < minCapacity;
+            return snackCount < minCapacity;
 
 
         }
