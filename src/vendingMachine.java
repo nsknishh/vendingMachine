@@ -1,19 +1,18 @@
 public class vendingMachine {
-
-    public vendingMachine(int initialSnacks, int threshold) {
+    private int snackCount;
+    private int minCapacity;
+    public vendingMachine(int initialSnacks, int minimum) {
         double snackCount = initialSnacks;
-        double minCapacity = threshold;
+        double minCapacity = minimum;
+    }
+    public boolean buySnack(int snackCount, int minCapacity) {
+        if (this.snackCount > 0) {
+            this.snackCount--;
+        }
+        return this.snackCount < this.minCapacity;
     }
 
     public static void main(String[] args) {
 
-        public boolean buySnack (int snackCount, int minCapacity) {
-            if (snackCount > 0) {
-                snackCount--;
-            }
-            return snackCount < minCapacity;
-
-
-        }
     }
 }
