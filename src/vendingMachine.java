@@ -2,8 +2,8 @@ public class vendingMachine {
     private int snackCount;
     private int minCapacity;
     public vendingMachine(int initialSnacks, int minimum) {
-        double snackCount = initialSnacks;
-        double minCapacity = minimum;
+        this.snackCount = initialSnacks;
+        this.minCapacity = minimum;
     }
     public boolean buySnack() {
         if (this.snackCount > 0) {
